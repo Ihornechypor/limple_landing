@@ -1,0 +1,36 @@
+@import "vars";
+@import "libs";
+// @import "fonts";
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+.header {
+	background-color: #fcdb00;
+	padding-top: 58px;
+}
+.logo {
+
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+	padding-top: 10px;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	&__item {
+		padding: 0;
+		margin: 0 57px;
+		color: #000;
+	}
+	&__item a{
+		text-decoration: none;
+		color: #000;
+	}
+
+}
+
+
+
+@import "media"; // Always at the end

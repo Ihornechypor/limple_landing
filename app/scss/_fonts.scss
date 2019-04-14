@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+//
+// @include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+// @include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
+
+
+@include font-face("PT-Sans", "../fonts/PT_Sans/PT_Sans-Web-Regulur.ttf");
+@include font-face("PT-Sans", "../fonts/PT_Sans/PT_Sans-Web-Bold.ttf", bold);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PT_Sans-Web-Italic.ttf", normal, italic);
+@include font-face("PT-Sans", "../fonts/PT_Sans/PT_Sans-Web-BoldItalic.ttf", bold, italic);
