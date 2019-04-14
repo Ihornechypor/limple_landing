@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 39" width="33" height="39">
+	<style>
+		tspan { white-space:pre }
+		.txt0 { font-size: 42px;line-height: 20px;fill: #010101;font-family: "Font Awesome" } 
+	</style>
+	<g id="Slider">
+		<g id="Content">
+			<g id="store-buttons">
+				<text id="icon-fa-apple" style="transform: matrix(1,0,0,1,0,36)" >
+					<tspan x="0" y="0" class="txt0"></tspan>
+				</text>
+			</g>
+		</g>
+	</g>
+</svg>

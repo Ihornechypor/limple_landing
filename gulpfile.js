@@ -39,11 +39,12 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/distr/jquery.min.js',
-		'app/js/common.js', // Always at the end
+		'app/libs/fontawesome/all.js',
+		'app/js/common.js' // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
-	.pipe(gulp.dest('distr/js'))
+	.pipe(gulp.dest('dist/js'))
 	.pipe(browserSync.reload({ stream: true }))
 });
 
@@ -55,9 +56,8 @@ gulp.task('code', function() {
 });
 
 
-
 gulp.task('img', function() {
-	gulp.src('app/img/*')
+	gulp.src('app/img/**/*')
 			.pipe(imagemin())
 			.pipe(gulp.dest('dist/img'))
 			.pipe(browserSync.stream())
@@ -99,7 +99,7 @@ if (gulpversion == 4) {
 		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', gulp.parallel('styles'));
 		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
 		gulp.watch('app/*.html', gulp.parallel('code'));
-		gulp.watch('app/img/*', gulp.parallel('img'));
+		gulp.watch('app/img/**/*', gulp.parallel('img'));
 		gulp.watch('app/fonts/*', gulp.parallel('fonts'))
 	});
 	gulp.task('default', gulp.parallel('styles','scripts','img','fonts','code','browser-sync', 'watch'));

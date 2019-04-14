@@ -1,36 +1,90 @@
 @import "vars";
 @import "libs";
-// @import "fonts";
+@import "headlines";
+
 body {
 	font-family: 'PT Sans', sans-serif;
+	min-width: 320px;
 }
-.header {
+.main {
 	background-color: #fcdb00;
 	padding-top: 58px;
+	padding-bottom: 20px;
 }
+
 .logo {
+	display: flex;
+	justify-content: flex-start;
+	@media(max-width: 992px){
+		margin-bottom: 20px;
+		justify-content: center;
+	}
 
 }
 
 .menu {
 	padding: 0;
 	margin: 0;
-	padding-top: 10px;
+	min-height: 43px;
 	list-style-type: none;
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
 	&__item {
 		padding: 0;
-		margin: 0 57px;
 		color: #000;
-	}
-	&__item a{
-		text-decoration: none;
-		color: #000;
+		a {
+			font-size: 22px;
+			font-weight: 700;
+			text-decoration: none;
+			color: #000;
+
+		}
 	}
 
 }
+.appInfo {
+	margin-top: 71px;
+	@media(max-width: 992px){
+		margin-top: 20px;
+	}
+}
+.appImg {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.appText {
+	margin-top: 72px;
+	@media(max-width: 992px){
+		margin-top: 10px;
+	}
 
+}
+.downloadApp {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 200px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	&__icon{
+		margin: 0 10px;
+		text-decoration: none;
+		color: #000;
+		&:hover {
+				text-decoration: none;
+		}
+		i {
+			font-size: 50px;
+		}
+	}
+	@media(max-width: 992px){
+		max-width: 100%;
+		justify-content: center;
+
+	}
+}
 
 
 @import "media"; // Always at the end
