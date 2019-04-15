@@ -85,6 +85,60 @@ body {
 
 	}
 }
+.features {
+	padding-top: 101px;
+	@media(max-width: 992px){
+		padding-top: 20px;
+	}
+}
+.appAdwantagWrap {
+	margin-top: 90px;
+	@media(max-width: 992px){
+		margin-top: 20px;
+	}
+}
+.appAdwantage{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	&__col{
+		margin-bottom: 20px;
+		&--last {
+			flex-basis: 220px;
+			@media(max-width: 992px){
+				flex-basis: auto;
+			}
+		}
+	}
+	&__headline {
+		margin-bottom: 16px;
+		font-size: 22px;
+		@media(max-width: 992px){
+			text-align: center;
+		}
+	}
+	&__description{
+		color: #c8c8c8;
+		@media(max-width: 992px){
+			text-align: center;
+		}
+	}
+	&__icon {
+		color: #000;
+	}
+}
+.subscribe {
+	background-color: #010101;
+	padding-top: 90px;
+	padding-bottom: 100px;
+	@media(max-width: 992px){
+		padding-top: 20px;
+		padding-bottom: 30px;
+
+	}
+
+}
+
 
 
 @import "media"; // Always at the end

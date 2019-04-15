@@ -6,4 +6,24 @@
 .healineL2 {
   margin-bottom: 26px;
   font-size: 20px;
+  &--big {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+  }
+  &--colored{
+    color: #fcdb00;
+  }
+}
+.healineDesctiption {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  &--colored {
+    color: #898989;
+
+  }
+
 }
